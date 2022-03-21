@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">qr scanner</string>
+    <string name="selectedlanguage">Arabic</string>
+    <string name="language">ابدأ المسح</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Select">Select a Language</string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E829"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/imgslider"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline4">
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColorLink="#0014F6"
+
+            android:text="Tourism paragraph , contains all the information you are looking for about tourism and its importance for national income and the duty of citizens to encourage tourism and also the duty of the government. Here you will find tourism paragraph in English with all that interests you.
+
+Tourism paragraph
+Tourism is one of the most important sources of income for any country. Here, we will provide you with English Tourism paragraph  with all the important information about tourism and its role in the economy of the country and our role in promoting tourism.Here you will find four paragrahps about tourism ,so that you can choose what suits your ideas.
+
+The first paragraph
+
+Tourism is an activity in which the person moves from place to place for the purpose of recreation and the identification of tourist sites.The person who carries out this activity is called the tourist.Tourism is divided into: internal tourism which is inside the country and an external tourism which is outside the country. Tourism is of particular importance for the benefit of the country as a whole and citizens in particular, such as: Tourism is an important source of funds and increasing the national income of the country.Some countries rely mainly on tourism to provide capital and build projects in them.Providing job opportunities for residents  and thus reducing the unemployment rate.The exchange of cultures and ideas between tourists and the country’s population.
+
+The second paragraph
+
+The tourists coming to the country transfer their culture and developments in their country to the host citizens and thereby stimulate development and progress within the country.Tourism needs to unite the citizen’s efforts with the government to revive and increase the number of tourists who visit the country, because the tourist is an ambassador of his country and convey everything he sees inside the country to his country and expresses his feelings and impressions.
+
+The third paragraph
+
+The role of citizens in encouraging tourism  is to deal with tourists in a positive and nice way, the citizen should be ashamed with the tourist and help him when he asks for help.Staying away from trying to exploit tourists on the pretext that they are coming for tourism, the dealer raises prices on them, or sell them fake goods as original.To preserve the cleanliness of streets, parks and tourist sites, and use them in good ways for tourists to enjoy, and visit them in subsequent times.Participate in voluntary work which includes assisting tourists, directing them and cleaning tourist sites.Preserve tourist sites and gardens from ruin and destruction.Every citizen has the right to preserve the beauty of the town in general.Raising children to respect and not disturb the tourists.
+
+The fourth paragraph
+
+The role of the government in encouraging tourism is to facilitate the procedures of tourists entering tourist sites and their complexity.Setting the guidelines for streets, roads and all that is necessary for the tourist to facilitate his arrival to any place he wishes.Encouraging work in the tourism sector for citizens and facilitating work procedures.The appointment of tour guides in tourist areas and tourist offices; to help tourists to identify the best tourist areas, and enjoy them properly.Strict laws that protect tourists from exploitation.Paving the streets well; to facilitate movement on them.Secure the necessary protection for tourists to freedom of movement with no fear of attack or theft or any types of assault. Educating the citizen about the importance of tourism and how to activate it and encourage it.
+
+Paragraph about tourism
+Tourism is one of the most important means of income for many countries. We all knew this after going through the current crisis of Corona disease.
+
+After closing the various means of tourism to many countries, we hear and saw the deterioration of the economy of many countries.
+
+Many countries have been affected by the lack of internal and external tourism.  The main debate among many countries has become about the importance and benefits of tourism and how it affects the economy and development. And it is one of the most important means of income for individuals and organizations.
+
+Therefore, I think that in the coming years, the concept of tourism and its preservation, by providing advanced and modern means, will be brighter.
+
+Tourism has become more and more important requirements for attraction. People are no longer brave enough to take the plunge again.
+
+
+
+Paragraph about tourism
+Tourism is one of the activities that we practice on an ongoing basis to entertain ourselves and gain new experiences and information from different cultures.
+
+I find it great for family and friends to share some tourist trips that include different activities such as mountain climbing, jumping from high areas using ropes or umbrellas,  swimming in an environment rich in fish or safari in the desert. All these types of tourism interest me a lot and I love to do them.
+
+One of the countries I’m thinking of going to is Dubai. It includes a wide range of recreational activities that can be enjoyed. In addition to a lot of scenic views and large commercial centers that we can wander and shop from.
+
+
+
+Tourism paragraph in English
+Tourism is one of the sources of national income for some countries. Therefore, seven-star and five-star luxury hotels are being built, As well as taking care of tourist places in terms of cleanliness and the provision of services needed by tourists.
+
+These countries also provide modern means of transportation such as airports, buses and modern cars to transport tourists from one place to another.
+
+There will also be a variety of restaurants that serve fast food and provide all the needs of tourists, as well as there will be a tour guide accompanying each group of tourists to introduce them to the tourist places they visit, and solve any problem they face.
+
+
+
+Paragraph about the importance of tourism
+Tourism is of great importance at the present time, and every country is trying to find a place for itself on the tourist map, and there are some countries that have good tourist potentials, such as monuments, museums, beaches and other elements of tourism, but there must also be a plan to modernize all tourist places, and provide convenient transportation. And building luxury hotels, especially in tourist places, and recreational places have become of great importance to attract tourists of all ages.
+
+
+
+Write a paragraph about tourism
+Tourism is a very important source for my family members. My father and older brother work in the field of tourism, they work in selling antiques to tourists. Therefore, tourism is very important to them.
+
+Of course, tourism has been greatly affected in the past two years as a result of the Corona virus outbreak. But it is good that they were able to sell some antiques through the Internet .
+
+Tourism is more active in the summer season. Soon summer will come and I am working with my father in the shop to help him, I hope until this time that this crisis has passed.
+
+Tourism has been greatly affected in many countries, and many of these countries have greatly affected their economy and suffered due to a lack of tourism. The shortage of hard currency affects a lot in any country.
+
+Because we are from a family that works in tourism, I know very well the amount of damage that may occur to any country that depends on tourism for its income like islands.
+
+Therefore, I hope that the world will take care of eliminating this crisis and returning tourism to all countries of the world again.
+
+
+
+Importance of tourism paragraph
+Tourism is one of the most important sources of national income. It also works to improve and provide better job opportunities for countries that their large source of income from tourism. Such as islands and areas that are not rich in other sources of income. These areas are completely dependent on tourism. In the event that tourism stops there, the economic impact will be great on the state and on individuals.
+
+There are also other countries, although there are other sources to attract tourism, such as agriculture or industry, but they are also affected because many trades arise as a result of the influx of some types of tourism, including commercial tourism. Therefore, tourism is very important for all countries and should be given a lot of attention.
+
+
+
+A paragraph about tourism
+Tourism is an important destination for many people who are interested in seeing different places than they live in or see beautiful landscapes that they have not been able to see before.
+
+I live in a tourist country where many people come every year in the winter because of the snowfall and the freezing of lakes and rivers.
+
+My country is famous for the thickness of the ice, which allows many ski enthusiasts to enjoy and experience some interesting adventures.
+
+Skiing is the most important source of tourism for us and many come because of the high plateaus, which are famous for their toughness to challenge and climb.
+
+Some local ski jumping competitions are also held, with many professional runners from different countries participating. This is because of its wide fame.
+
+Therefore, I find it good for any country to benefit from its resources, even if they are as simple as snow. It is good to have such tourism, which benefits the economic income of the country and the individual.
+
+
+
+Short Paragraph About Tourism
+There is no doubt that the tourism sector is of great importance to all countries of the world. It represents an important factor for the advancement of the economy, which helps many countries in the development, construction, and social improvement of many individuals working in the tourism sector.
+
+Foreign currencies of all countries represent a very important source. We often find that the most important source of currency availability is through tourism and the injection of currency into the markets to return these currencies for import and export and to facilitate transactions with other countries.
+
+Therefore, it is available to everyone and can be traded easily without any rise in the currency in the event of a decrease in banks and exchange offices.
+
+The value of any currency can be determined by its value in dollars at the present time. And the more sources of income for foreign currency are numerous, the higher the currency of this town and the greater its prosperity.
+
+
+
+Paragraph on importance of tourism
+Tourism is of great importance from several aspects, whether for economic income or during the preservation of the natural, archaeological and historical environment. The impact of tourism on the economic side may be long-term and requires patience to grow.
+
+One of the important aspects of tourism for any country is the preservation of the natural environment and the imposition of strict laws to preserve archaeological or historical properties, or to preserve coral reefs and fish or animal wealth, which results in a continuous increase in life and protection from extinction for many species at risk of extinction.
+
+Therefore, tourism may play a major role in the environment that surrounds us, preserving it, and increasing the  strong infrastructure to serve this environment.
+
+
+
+Easy paragraph about tourism
+There is no doubt that tourism is one of the sources of national income for all countries of the world, in addition to benefiting from the circulation of currencies in the markets and reviving the internal economy of the individual and society.
+
+But it is also important and beneficial to the person who practices it. It is an experience through which he benefits, to get to know himself and others, which makes him more familiar with those around him, and he can determine his requirements and what his needs are.
+
+It also helps to learn about the surrounding or local cultures, which gives him a diverse culture, and it also helps to lighten the mind.
+
+One of the best benefits of tourism
+
+It makes you come out of your bubble and look at things differently and create a more open and knowledgeable personality,
+
+It also makes you more tolerant of yourself or others. It helps the mind to obtain psychological comfort, and eliminate anxiety and fears within a person.
+
+Therefore, tourism is very beneficial for all people.
+
+
+
+Paragraph about importance of tourism
+Tourism plays an important and significant role in the economy of all countries. It represents an important external source of income for foreign currency, which makes it available and accessible in the markets and banks, facilitating foreign purchases through imports.
+
+Tourism represents various opportunities internally and externally for all countries of the world. Benefiting from it is multiple, whether for government institutions, or for companies and individuals who profit by working in tourism.
+
+Tourism varies according to the state’s resources. There are general tourism, medical tourism, commercial tourism, and agricultural tourism.
+
+When paying attention to all kinds of these tourism and providing safety, amenities and easy infrastructure, a great and different attraction occurs, which helps any country to grow and progress, without relying on the natural resources in it, ensuring the prolongation of the life of any natural resource, and preserving it from expiry and loss in a short time .
+
+What is meant by internal resources such as coal, gas, oil, petroleum, gold, precious stones. Whatever the amount of internal wealth, it is subject to expiration, so it is wonderful to provide other sources of income that help in the growth of the economy away from internal resources.
+
+
+
+Write an essay on importance of tourism
+We can say that tourism has been around for decades, but it has become more important in the past years. After some countries rich in natural resources studied the flow and how long it can continue, and discovered that their natural resources are subject to stopping and ending in the near future, so the plan was a complete and radical change in customs and traditions, and the development of future plans for the country.
+
+Among these rich countries are Kuwait, UAE, Saudi Arabia. It can be said that the UAE is one of the first countries that started working on increasing the country’s economic resources and developing future plans that dispense with dependence on oil and other natural resources. Kuwait and Saudi Arabia followed it. But Saudi Arabia remains the first study .
+
+Therefore, in this century, we find that many countries are following plans to provide national income to the state through means different from its natural resources, work on infrastructure, and provide all requirements so that it can benefit from its other resources, including tourism. Which contains many benefits and resources, so it is possible to benefit from medical tourism, commercial tourism, and general tourism.
+
+In all types of tourism, the state benefits from investment and the injection of foreign currencies into the market, which benefits it and the individuals."
+            app:layout_constraintBottom_toBottomOf="@id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/guideline4"
+            app:layout_constraintVertical_bias="0.234" />
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

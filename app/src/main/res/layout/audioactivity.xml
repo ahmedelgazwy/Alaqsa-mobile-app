@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".audioActivity"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgageveiw"
+            android:layout_width="228dp"
+            android:layout_height="205dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/hopes">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="40dp">
+
+            </SeekBar>
+
+            <TextView
+                android:id="@+id/txtstart"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="-26dp"
+                android:layout_toLeftOf="@+id/seekbar"
+                android:text="0:10"
+                android:textColor="#FFF"
+                android:textSize="14sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtstop"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-13dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/seekbar"
+                android:text="5:00"
+                android:textColor="#FFF"
+                android:textSize="14sp">
+
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/playbtn"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_pause"
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+            </Button>
+            <Button
+                android:id="@+id/forwardbtn"
+                android:layout_toRightOf="@+id/playbtn"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_fast_forward"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </Button>
+            <Button
+                android:id="@+id/rewinddbtn"
+                android:layout_toLeftOf="@+id/playbtn"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_fast_rewind"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            </Button>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
