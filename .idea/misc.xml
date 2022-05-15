@@ -23,9 +23,16 @@
         <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/drawable/loadingscreen.xml" value="0.2785" />
         <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout-land/activity_result.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/activity_main.xml" value="0.30052083333333335" />
-        <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/activity_result.xml" value="0.11302211302211303" />
-        <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/audioactivity.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/activity_result.xml" value="0.6666666666666666" />
+        <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/audioactivity.xml" value="0.22" />
         <entry key="..\:/Users/ahmed/AndroidStudioProjects/qrscanner (1)/app/src/main/res/layout/drop_down.xml" value="0.30052083333333335" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout-land/activity_result.xml" value="0.16637246248896734" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/activity_main.xml" value="0.1611799914493373" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/activity_result.xml" value="0.2106764466177669" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/audioactivity.xml" value="0.1611799914493373" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/fragment_audio_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/fragment_image_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/ahmed/OneDrive - Ontario Tech University/Desktop/test/qrscanner (1)/app/src/main/res/layout/fragment_text_fragment.xml" value="0.22103463018383926" />
       </map>
     </option>
   </component>

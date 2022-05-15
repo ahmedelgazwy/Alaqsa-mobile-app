@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -23,8 +25,13 @@ import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.ArrayList;
 
 
@@ -39,7 +46,7 @@ public class result extends AppCompatActivity {
     private Button mButtonStop;
 
     private SeekBar mSeekBar;
-
+    private TextView text_to_audio;
     private TextView mPass;
     private TextView mDuration;
     private TextView mDue;
@@ -54,7 +61,10 @@ public class result extends AppCompatActivity {
     public String[] img_links;
     public String final_result;
     public String[] submsg;
-
+    public String stringText;
+    private TabLayout tabLayout;
+    private ViewPager2 viewPager2;
+    private String[] titles = new String[] {"Text","Audio","Images"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,168 +76,55 @@ public class result extends AppCompatActivity {
         submsg =msg.split("separator");
         String language= submsg[1];
         String[] Results = submsg[0].split("///");
-        Log.d("separator",language);
+        Log.d("separator",Results[0]);
         audio =Results[1];
-        if(language.equals("English"))
-        {setTitle("Text and Images");}
-        else if(language.equals("Arabic"))
-        {Log.d("offf","ana hna");
-        setTitle("النصوص والصور");}
-        else if (language.equals("French"))
-        {setTitle("Texte et images");}
-        else if(language.equals("German"))
-        {setTitle("Text und Bilder");}
-        else if(language.equals("Russian"))
-        {setTitle("Текст и изображения");}
-
-        img_links=Results[2].split(",");
-        ((TextView) findViewById(R.id.Result)).setText(Results[0]);
-        //setContentView(R.layout.activity_main);
-        mContext = getApplicationContext();
-        mActivity = result.this;
-        imageSlider = findViewById(R.id.imgslider);
-        ArrayList<SlideModel> images = new ArrayList<>();
-        for(String iterator  : img_links )
-        {
-            images.add(new SlideModel(iterator,null));
-        }
-        images.add(new SlideModel(R.drawable.background,null));
-        images.add(new SlideModel("https://wegotthiscovered.com/wp-content/uploads/2021/07/Ultra-Instinct-Goku-640x321.jpg",null));
-        images.add(new SlideModel(R.drawable.background3,null));
-        imageSlider.setImageList(images);
-        //Log.v("okkkk",  audio);
-        /*mButtonPlay = findViewById(R.id.btn_play);
-        mButtonPause = findViewById(R.id.btn_pause);
-        mButtonResume = findViewById(R.id.btn_res);
-        mButtonStop = findViewById(R.id.btn_stop);
-        mSeekBar = findViewById(R.id.seek_bar);
-        mPass = findViewById(R.id.tv_pass);
-        mDuration = findViewById(R.id.tv_duration);
-        mDue = findViewById(R.id.tv_due);
-        mHandler = new Handler();
-        mButtonPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                stopPlaying();
-                //String audioUrl = '';
-                String audioUrl = Results[1];
-                mPlayer = new MediaPlayer();
-                try {
-                    mPlayer.setDataSource(audioUrl);
-                    mPlayer.prepare();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                mPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-                mPlayer.start();
-                Toast.makeText(mContext, "Media Player is playing.", Toast.LENGTH_SHORT).show();
-                getAudioStats();
-                initializeSeekBar();
-            }
-        });
-
-        mButtonPause.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPlayer.pause();
-                length = mPlayer.getCurrentPosition();
-            }
-        });
-        mButtonResume.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mPlayer.seekTo(length);
-                mPlayer.start();
-            }
-        });
-
-        mButtonStop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                stopPlaying();
-            }
-        });
-        mSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                if (mPlayer != null && b) {
-                    mPlayer.seekTo(i * 1000);
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-        });*/
-    }
-
-
-
-    /*protected void stopPlaying() {
-        if (mPlayer != null) {
-            mPlayer.stop();
-            mPlayer.release();
-            mPlayer = null;
-            Toast.makeText(mContext, "Stop playing.", Toast.LENGTH_SHORT).show();
-            if (mHandler != null) {
-                mHandler.removeCallbacks(mRunnable);
-            }
-        }
-    }
-
-    protected void getAudioStats() {
-        int duration = mPlayer.getDuration() / 1000; // In milliseconds
-        int due = (mPlayer.getDuration() - mPlayer.getCurrentPosition()) / 1000;
-        int pass = duration - due;
-        mPass.setText("" + pass + " seconds");
-        mDuration.setText("" + duration + " seconds");
-        mDue.setText("" + due + " seconds");
-    }
-
-    protected void initializeSeekBar() {
-        mSeekBar.setMax(mPlayer.getDuration() / 1000);
-        mRunnable = new Runnable() {
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        new Thread(new Runnable() {
             @Override
             public void run() {
-                if (mPlayer != null) {
-                    int mCurrentPosition = mPlayer.getCurrentPosition() / 1000; // In milliseconds
-                    mSeekBar.setProgress(mCurrentPosition);
-                    getAudioStats();
+                URL textUrl;
+                try{
+                    textUrl= new URL(Results[0]);
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(textUrl.openStream()));
+                    String SreingBuffer;
+                    while ((SreingBuffer = bufferedReader.readLine())!=null){
+                        stringText += SreingBuffer;
+                    }
+                    bufferedReader.close();
+                }catch (IOException e){
+                    Log.d("error",e.toString());
                 }
-                mHandler.postDelayed(mRunnable, 1000);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        ((TextView) findViewById(R.id.Result)).setText(stringText);
+                    }
+                });
             }
-        };
-        mHandler.postDelayed(mRunnable, 1000);
-    }*/
+        }).start();
 
-    public boolean onTouchEvent(@NonNull MotionEvent touchevent){
-        switch (touchevent.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                x1 = touchevent.getX();
-                y1 = touchevent.getY();
-                break;
-            case MotionEvent.ACTION_UP:
-                x2 = touchevent.getX();
-                y2 = touchevent.getY();
-                if(x1>x2){
-                    Log.d("aaaaa","ya rbbbb");
-                    Intent i = new Intent(this.mContext, audioActivity.class);
-                    i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    //i.putExtra("audio",audio);
-                    final_result = audio+",,,"+img_links[0];
 
-                    i.putExtra("audio",final_result);
-                    mContext.startActivity(i);
-                    break;
-                }
+        tabLayout = findViewById(R.id.tablayout);
+        viewPager2 = findViewById(R.id.view_pager);
+        viewPager2.setUserInputEnabled(false);
+        //</ get elements >
+        adapter adapter = new adapter(this,msg,stringText);
 
-        }
-        return false;
+
+
+        viewPager2.setAdapter(adapter);
+
+        new TabLayoutMediator(tabLayout, viewPager2,
+                new TabLayoutMediator.TabConfigurationStrategy() {
+                    @Override
+                    public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                        tab.setText(titles[position]);
+                    }
+                }).attach();
+
+
     }
+
 }
 
 

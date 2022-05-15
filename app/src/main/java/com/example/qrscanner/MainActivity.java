@@ -39,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         auto_completeTxt=findViewById(R.id.auto_complete_txt);
         arrayAdapter = new ArrayAdapter<String>(this,R.layout.drop_down,items);
         auto_completeTxt.setAdapter(arrayAdapter);
-
+        getSupportActionBar().setTitle("QR Scan");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
         auto_completeTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
